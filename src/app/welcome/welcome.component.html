@@ -1,1 +1,10 @@
-<p>Ciao {{ utente }}, clicca <a routerLink="/articoli">Qui</a> per vedere l'elenco degli articoli disponibili</p>
+<app-jumbotron
+  [Titolo]="titolo"
+  [SottoTitolo]="sottotitolo"
+  [Show]="false"
+></app-jumbotron>
+
+<p>
+  Ciao {{ utente }}, clicca <a routerLink="/articoli">Qui</a> per vedere
+  l'elenco degli articoli disponibili
+</p>

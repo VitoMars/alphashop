@@ -1,9 +1,23 @@
+<app-jumbotron [Titolo]="titolo" [SottoTitolo]="sottotitolo"></app-jumbotron>
+
 <div>
   <label for="userId">User Id:</label>
-  <input type="text" name="" id="userId" placeholder="Nome Utente" [(ngModel)] = userId>
+  <input
+    type="text"
+    name=""
+    id="userId"
+    placeholder="Nome Utente"
+    [(ngModel)]="userId"
+  />
 
   <label for="password">Password:</label>
-  <input type="password" name="" id="password" placeholder="Password" [(ngModel)] = password>
+  <input
+    type="password"
+    name=""
+    id="password"
+    placeholder="Password"
+    [(ngModel)]="password"
+  />
 
   <button (click)="gestAuth()" class="btn btn-primary">Conettiti</button>
 </div>
