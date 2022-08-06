@@ -15,7 +15,7 @@ export class ArticoliService {
       prezzo: 1.09,
       active: true,
       data: new Date(),
-      imgUrl: '',
+      imageUrl: 'assets/images/prodotti/014600301.jpg',
     },
     {
       codart: '013500121',
@@ -26,7 +26,18 @@ export class ArticoliService {
       prezzo: 1.3,
       active: true,
       data: new Date(),
-      imgUrl: '',
+      imageUrl: 'assets/images/prodotti/013500121.jpg',
+    },
+    {
+      codart: '014649001',
+      descrizione: 'BARILLA PANNE RIGATE 500 GR',
+      um: 'PZ',
+      pzcart: 12,
+      peso: 0.5,
+      prezzo: 0.89,
+      active: true,
+      data: new Date(),
+      imageUrl: 'assets/images/prodotti/014649001.jpg',
     },
     {
       codart: '007686402',
@@ -37,7 +48,7 @@ export class ArticoliService {
       prezzo: 6.46,
       active: true,
       data: new Date(),
-      imgUrl: '',
+      imageUrl: 'assets/images/prodotti/007686402.jpg',
     },
     {
       codart: '057549001',
@@ -48,7 +59,7 @@ export class ArticoliService {
       prezzo: 5.97,
       active: true,
       data: new Date(),
-      imgUrl: '',
+      imageUrl: 'assets/images/prodotti/057549001.jpg',
     },
   ];
 
