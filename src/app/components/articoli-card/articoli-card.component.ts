@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { IArticoli } from 'src/app/models/Articoli';
 
 @Component({
@@ -22,5 +22,13 @@ export class ArticoliCardComponent implements OnInit {
     imageUrl: '',
   };
 
+  @Output()
+  edit = new EventEmitter();
+  @Output()
+  delete = new EventEmitter();
+
   ngOnInit(): void {}
+
+  editArt = () => this.edit.emit(this.articolo.codart);
+  delArt = () => this.delete.emit(this.articolo.codart);
 }
