@@ -1,23 +1,11 @@
-.content-main {
-  padding: 30px 3%;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: rgb(255, 255, 255);
+.card-product-grid .info-wrap {
+  padding: 1rem;
 }
 
-.content-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 30px;
-}
-
-.content-header a {
-  margin-right: 5px;
-}
-
-.content-header .content-title {
-  margin-bottom: 0;
+.card-product-grid a.title {
+  color: #6c757d;
+  display: block;
+  text-decoration: none;
 }
 
 .card-product-grid {
@@ -50,16 +38,6 @@
   overflow: hidden;
   position: relative;
   background: white;
-}
-
-.card-product-grid .info-wrap {
-  padding: 1rem;
-}
-
-.card-product-grid a.title {
-  color: #6c757d;
-  display: block;
-  text-decoration: none;
 }
 
 .price {

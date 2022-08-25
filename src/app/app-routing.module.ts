@@ -1,39 +1,43 @@
-import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { RouteGuardService } from 'src/services/route-guard.service';
+
 import { ArticoliComponent } from './pages/articoli/articoli.component';
 import { ErrorComponent } from './pages/error/error.component';
 import { GridArticoliComponent } from './pages/grid-articoli/grid-articoli.component';
 import { LoginComponent } from './pages/login/login.component';
 import { LogoutComponent } from './pages/logout/logout.component';
+import { NgModule } from '@angular/core';
+import { RegistrazioneComponent } from './pages/registrazione/registrazione.component';
+import { RouteGuardService } from '../services/route-guard.service';
 import { WelcomeComponent } from './pages/welcome/welcome.component';
 
 const routes: Routes = [
-  //Pagina Vuota
+  // Pagina Vuota
   { path: '', component: LoginComponent },
-  //Login
+  // Login
   { path: 'login', component: LoginComponent },
-  //Welcome
+  // Registrazione
+  { path: 'signup', component: RegistrazioneComponent },
+  // Welcome
   {
     path: 'welcome/:userid',
     component: WelcomeComponent,
     canActivate: [RouteGuardService],
   },
-  //Articoli
+  // Articoli
   {
     path: 'articoli',
     component: ArticoliComponent,
     canActivate: [RouteGuardService],
   },
-  //Articoli-Grid
+  // Griglia-Articoli
   {
     path: 'articoli/grid',
     component: GridArticoliComponent,
     canActivate: [RouteGuardService],
   },
-  //Logout
+  // Logout
   { path: 'logout', component: LogoutComponent },
-  //Error Page
+  // Pagina di errore
   { path: '**', component: ErrorComponent },
 ];
 

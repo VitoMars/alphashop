@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+
 import { IArticoli } from 'src/app/models/Articoli';
 
 @Component({
@@ -23,9 +24,9 @@ export class ArticoliCardComponent implements OnInit {
   };
 
   @Output()
-  edit = new EventEmitter();
-  @Output()
   delete = new EventEmitter();
+  @Output()
+  edit = new EventEmitter();
 
   ngOnInit(): void {}
 

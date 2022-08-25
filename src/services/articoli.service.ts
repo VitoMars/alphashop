@@ -1,5 +1,5 @@
-import { Injectable } from '@angular/core';
 import { IArticoli } from 'src/app/models/Articoli';
+import { Injectable } from '@angular/core';
 
 @Injectable({
   providedIn: 'root',
@@ -62,7 +62,6 @@ export class ArticoliService {
       imageUrl: 'assets/images/prodotti/057549001.jpg',
     },
   ];
-
   constructor() {}
 
   getArticoli = (): IArticoli[] => this.articoli;

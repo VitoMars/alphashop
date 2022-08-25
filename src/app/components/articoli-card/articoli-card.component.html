@@ -1,22 +1,21 @@
 <!-- Blocco temporaneo -->
 <div class="col">
-   <div class="card card-product-grid">
-      <a href="#" class="img-wrap"> <img src="{{ articolo.imageUrl }}" class="img-rounded" width="250" height="225">
-      </a>
-      <div class="info-wrap">
-         <a href="#" class="title text-truncate">{{ articolo.descrizione }}</a>
-         <div class="price mb-2">{{ articolo.prezzo | currency:"EUR"}}</div>
-         <button href="#"
-            class="btn btn-sm btn-outline-secondary d-inline-flex align-items-center justify-content-around"
-            (click)="editArt()">
-            <i class="fa-solid fa-pen"></i>
-            <span>Modifica</span>
-         </button>
-         <button href="#" class="btn btn-sm btn-outline-danger d-inline-flex align-items-center justify-content-around"
-            (click)="delArt()">
-            <i class="fa-solid fa-trash-can"></i>
-            <span>Elimina</span>
-         </button>
-      </div>
-   </div>
+  <div class="card card-product-grid">
+    <a href="#" class="img-wrap"> <img src="{{ articolo.imageUrl }}" class="img-rounded" height="225">
+    </a>
+    <div class="info-wrap">
+      <a href="#" class="title text-truncate">{{ articolo.descrizione }}</a>
+      <div class="price mb-2">{{ articolo.prezzo | currency:"EUR"}}</div>
+      <button href="#" class="btn btn-sm btn-outline-secondary d-inline-flex align-items-center justify-content-around"
+        (click)="editArt()">
+        <i class="fa-solid fa-pen"></i>
+        <span>Modifica</span>
+      </button>
+      <button href="#" class="btn btn-sm btn-outline-danger d-inline-flex align-items-center justify-content-around"
+        (click)="delArt()">
+        <i class="fa-solid fa-trash-can"></i>
+        <span>Elimina</span>
+      </button>
+    </div>
+  </div>
 </div>

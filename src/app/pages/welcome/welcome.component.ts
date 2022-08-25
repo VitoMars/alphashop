@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 import { ActivatedRoute } from '@angular/router';
 import { SalutiDataService } from 'src/services/data/saluti-data.service';
 
@@ -37,8 +38,6 @@ export class WelcomeComponent implements OnInit {
   }
 
   handleError(error: any) {
-    console.log(error);
-    // this.saluti = error.toString();
     this.errore = error.error.message;
   }
 }
