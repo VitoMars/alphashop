@@ -57,7 +57,7 @@ export class ArticoliService {
       pzcart: 12,
       peso: 0.4,
       prezzo: 5.97,
-      active: true,
+      active: false,
       data: new Date(),
       imageUrl: 'assets/images/prodotti/057549001.jpg',
     },
